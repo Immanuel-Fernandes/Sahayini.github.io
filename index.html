@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahayini Social Development Society - Home</title>
+    <meta name="description" content="Welcome to Sahayini Social Development Society. We are dedicated to empowering communities and creating a sustainable future for all. Join us in our mission.">
+    <meta name="keywords" content="Sahayini, social development, NGO, community empowerment, non-profit, India">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .animated-gradient {
+            background: linear-gradient(-45deg, #0099ff, #ec4899, #22d3ee, #3b82f6);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #0099ff; /* Orange-500 */
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                Sahayini<span class="text-orange-500">.</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link active text-gray-800 font-semibold">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-gray-800">About Us</a>
+                <a href="events.html" class="nav-link text-gray-600 hover:text-gray-800">Events</a>
+                <a href="gallery.html" class="nav-link text-gray-600 hover:text-gray-800">Gallery</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden md:inline-block bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-orange-600 transition-all duration-300">
+                Donate
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-800 font-semibold">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-gray-800">About Us</a>
+            <a href="events.html" class="block py-2 text-gray-600 hover:text-gray-800">Events</a>
+            <a href="gallery.html" class="block py-2 text-gray-600 hover:text-gray-800">Gallery</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
+            <a href="contact.html" class="block mt-4 bg-orange-500 text-white text-center font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-orange-600 transition-all duration-300">
+                Donate
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-white text-center overflow-hidden">
+            <div class="absolute inset-0 animated-gradient z-0"></div>
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="relative z-20 px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-wide">Empowering Communities, Changing Lives</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 font-light">Sahayini is a beacon of hope, dedicated to fostering social development and creating a sustainable future for the underprivileged.</p>
+                <a href="about.html" class="bg-white text-orange-500 font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-orange-50 transform hover:scale-105 transition-all duration-300">
+                    Join Us Today
+                </a>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="intro" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Welcome to Sahayini</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+                <p class="max-w-4xl mx-auto text-gray-600 text-lg leading-relaxed">
+                    Sahayini Social Development Society is a non-profit organization committed to uplifting marginalized communities through comprehensive programs in education, health, and livelihood. We believe in creating lasting change by empowering individuals and fostering self-reliance. Our dedicated team works tirelessly on the ground to bring our vision of an equitable society to life.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Impact Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Impact at a Glance</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+
+                        <a id="7cc4769f-8b6b-4a3f-b2f5-78865d97996d" style="cursor:pointer;position:relative;display:inline-block" href="https://online.visual-paradigm.com/share/book/book-2021-2024-28hp6ylrmj?p=1" target="_blank"><img style="max-width: 100%; max-height: 100%;background-color: white;vertical-align:bottom" src="https://online.visual-paradigm.com/community/book-thumbnail/book-2021-2024-28hp6ylrmj?dummy=1753065623118?p=1" onError="this.onerror=null;this.src='https://online.visual-paradigm.com/images/vp-book-error.png';this.style.backgroundColor='transparent';"></img><img src="https://online.visual-paradigm.com/images/vp-flipbook-flipping_effect.gif" style="height: 50%;position:absolute;bottom:0px;right:0px"></img><img src="https://online.visual-paradigm.com/images/vp-flipbook-embed-icon_1.png" style="position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); max-height:40%; opacity:0.7"></img></a><script type="text/javascript">(function(d,eid,url){var sns=d.getElementsByTagName('script');var st=window.vfbkembbs||sns[sns.length-1];var e=d.createElement('script');e.type='text/javascript';e.src='https://cdn-v17-2.visual-paradigm.com/diagrams/js/embed.js';e.onload=function(){VFBKEMBW2(eid,url);};e.onreadystatechange=function(){if (this.readyState==='complete'){VFBKEMBW2(eid,url);}};st.parentNode.insertBefore(e,st);})(document,'7cc4769f-8b6b-4a3f-b2f5-78865d97996d','https://online.visual-paradigm.com/share/book/book-2021-2024-28hp6ylrmj?p=1')</script>
+                        
+
+                        <p class="text-gray-600">Annual Report 2020–2021</p>
+                        <a href="book_2020_2021.pdf" download class="text-blue-600 hover:underline">Download Booklet</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <a id="7cc4769f-8b6b-4a3f-b2f5-78865d97996d" style="cursor:pointer;position:relative;display:inline-block" href="https://online.visual-paradigm.com/share/book/book-2021-2024-28hp6ylrmj?p=1" target="_blank"><img style="max-width: 100%; max-height: 100%;background-color: white;vertical-align:bottom" src="https://online.visual-paradigm.com/community/book-thumbnail/book-2021-2024-28hp6ylrmj?dummy=1753065623118?p=1" onError="this.onerror=null;this.src='https://online.visual-paradigm.com/images/vp-book-error.png';this.style.backgroundColor='transparent';"></img><img src="https://online.visual-paradigm.com/images/vp-flipbook-flipping_effect.gif" style="height: 50%;position:absolute;bottom:0px;right:0px"></img><img src="https://online.visual-paradigm.com/images/vp-flipbook-embed-icon_1.png" style="position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); max-height:40%; opacity:0.7"></img></a><script type="text/javascript">(function(d,eid,url){var sns=d.getElementsByTagName('script');var st=window.vfbkembbs||sns[sns.length-1];var e=d.createElement('script');e.type='text/javascript';e.src='https://cdn-v17-2.visual-paradigm.com/diagrams/js/embed.js';e.onload=function(){VFBKEMBW2(eid,url);};e.onreadystatechange=function(){if (this.readyState==='complete'){VFBKEMBW2(eid,url);}};st.parentNode.insertBefore(e,st);})(document,'7cc4769f-8b6b-4a3f-b2f5-78865d97996d','https://online.visual-paradigm.com/share/book/book-2021-2024-28hp6ylrmj?p=1')</script>
+                        
+
+                        <p class="text-gray-600">Annual Report 2021–2024</p>
+                        <a href="book_2020_2021.pdf" download class="text-blue-600 hover:underline">Download Booklet</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                         <a id="7cc4769f-8b6b-4a3f-b2f5-78865d97996d" style="cursor:pointer;position:relative;display:inline-block" href="https://online.visual-paradigm.com/share/book/book-2021-2024-28hp6ylrmj?p=1" target="_blank"><img style="max-width: 100%; max-height: 100%;background-color: white;vertical-align:bottom" src="https://online.visual-paradigm.com/community/book-thumbnail/book-2021-2024-28hp6ylrmj?dummy=1753065623118?p=1" onError="this.onerror=null;this.src='https://online.visual-paradigm.com/images/vp-book-error.png';this.style.backgroundColor='transparent';"></img><img src="https://online.visual-paradigm.com/images/vp-flipbook-flipping_effect.gif" style="height: 50%;position:absolute;bottom:0px;right:0px"></img><img src="https://online.visual-paradigm.com/images/vp-flipbook-embed-icon_1.png" style="position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); max-height:40%; opacity:0.7"></img></a><script type="text/javascript">(function(d,eid,url){var sns=d.getElementsByTagName('script');var st=window.vfbkembbs||sns[sns.length-1];var e=d.createElement('script');e.type='text/javascript';e.src='https://cdn-v17-2.visual-paradigm.com/diagrams/js/embed.js';e.onload=function(){VFBKEMBW2(eid,url);};e.onreadystatechange=function(){if (this.readyState==='complete'){VFBKEMBW2(eid,url);}};st.parentNode.insertBefore(e,st);})(document,'7cc4769f-8b6b-4a3f-b2f5-78865d97996d','https://online.visual-paradigm.com/share/book/book-2021-2024-28hp6ylrmj?p=1')</script>
+                        
+
+                        <p class="text-gray-600">Annual Report 2024–2025</p>
+                        <a href="book_2020_2021.pdf" download class="text-blue-600 hover:underline">Download Booklet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="text-xl font-bold mb-4">Sahayini Social Development Society</h4>
+                    <p class="text-gray-400 leading-relaxed">A registered non-profit organization working towards the empowerment of marginalized communities through sustainable development initiatives.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition">Events</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Get Involved</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest work.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" class="w-full rounded-l-lg p-2 text-gray-800" placeholder="your.email@example.com">
+                            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold p-2 rounded-r-lg">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 Sahayini Social Development Society. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <!-- Social Media Icons -->
+                    <a href="#" class="text-gray-400 hover:text-white transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.013c0 4.934 3.56 9.043 8.207 9.854V15.18H8.05V12.368h2.157V10.272c0-2.14 1.275-3.316 3.23-3.316.92 0 1.86.164 1.86.164v2.33h-1.14c-1.05 0-1.37.65-1.37 1.32v1.59h2.59l-.42 2.813H12.8V21.86c4.647-.81 8.207-4.92 8.207-9.847C20.207 6.477 15.73 2 12 2z" clip-rule="evenodd" /></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

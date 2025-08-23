@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sahayini Social Development Society</title>
+    <meta name="description" content="Learn about the mission, vision, and history of Sahayini Social Development Society. Discover our approach and core values that drive our work.">
+    <meta name="keywords" content="about Sahayini, mission, vision, history, social development, core values">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3b82f6; /* Blue-500 */
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+        /* Scroll Animation */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                Sahayini<span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-gray-800">Home</a>
+                <a href="about.html" class="nav-link active text-gray-800 font-semibold">About Us</a>
+                <a href="events.html" class="nav-link text-gray-600 hover:text-gray-800">Events</a>
+                <a href="gallery.html" class="nav-link text-gray-600 hover:text-gray-800">Gallery</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden md:inline-block bg-blue-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300">
+                Donate
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-gray-800">Home</a>
+            <a href="about.html" class="block py-2 text-gray-800 font-semibold">About Us</a>
+            <a href="events.html" class="block py-2 text-gray-600 hover:text-gray-800">Events</a>
+            <a href="gallery.html" class="block py-2 text-gray-600 hover:text-gray-800">Gallery</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
+            <a href="contact.html" class="block mt-4 bg-blue-500 text-white text-center font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300">
+                Donate
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Page Header -->
+<section style="position: relative; color: white; padding: 4rem 0; height: 300px; overflow: hidden;">
+    <div style="position: absolute; inset: 0; z-index: 0;">
+        <img src="about_01.jpg" alt="A group of community members working together"
+             style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(0, 148, 240, 0.671), rgba(13, 55, 88, 0.877)); z-index: 1;"></div>
+    </div>
+    <div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; z-index: 2;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">About Sahayini</h1>
+        <p style="font-size: 1rem; font-weight: 300;">Our journey, our values, and our commitment to change.</p>
+    </div>
+</section>
+
+
+
+
+        <!-- Mission & Vision Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="scroll-animate">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">To empower marginalized communities by providing access to quality education, healthcare, and sustainable livelihood opportunities. We aim to create an inclusive society where every individual can live a life of dignity and self-respect.</p>
+                    </div>
+                    <div class="scroll-animate">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
+                        <!-- <p class="text-gray-600 text-lg leading-relaxed">We envision a world free of poverty and discrimination, where communities are self-reliant and every person has the chance to realize their full potential. A future built on the foundations of equality, justice, and sustainability.</p>
+                        -->
+                        <p class="text-gray-600 text-lg leading-relaxed"> 
+                            Motivated by compassion and love, we vision a society that empowers children, youth and women to live as dignified active citizens, enjoying their rights and sustaining the ecology of the environment in solidarity, justice and peace.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History / Timeline Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Journey Through the Years</h2>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                    
+                    <!-- Timeline Items 2009-2025 -->
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2009 - The Beginning</h3><p class="text-sm text-gray-600">Sahayini was founded with a mission to create lasting change in local communities.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2010 - First Education Program</h3><p class="text-sm text-gray-600">Launched our flagship program, providing free schooling for underprivileged children.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2011 - Community Health</h3><p class="text-sm text-gray-600">Initiated our first community health camp, offering free medical check-ups.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2012 - Skill Development</h3><p class="text-sm text-gray-600">Started vocational training workshops to empower youth with job skills.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2013 - Expanding Reach</h3><p class="text-sm text-gray-600">Expanded operations to two new villages, increasing our community impact.</p></div>
+                    </div>
+                     <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2014 - Water Conservation</h3><p class="text-sm text-gray-600">Launched a project to promote rainwater harvesting and water management.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2015 - Women's Empowerment</h3><p class="text-sm text-gray-600">Formed Self-Help Groups (SHGs) to foster financial independence for women.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2016 - Corporate Partnership</h3><p class="text-sm text-gray-600">Secured our first major corporate partnership to scale our programs.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2017 - Digital Literacy</h3><p class="text-sm text-gray-600">Introduced computer training and digital literacy for rural youth.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2018 - Regional Award</h3><p class="text-sm text-gray-600">Recognized with the 'Best NGO in Social Development' award for our region.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2019 - Sustainable Agriculture</h3><p class="text-sm text-gray-600">Trained farmers in organic farming and sustainable agricultural practices.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2020 - COVID-19 Response</h3><p class="text-sm text-gray-600">Launched massive relief efforts, distributing food and hygiene kits.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2021 - Post-Pandemic Support</h3><p class="text-sm text-gray-600">Focused on livelihood restoration and educational support for families.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2022 - Mental Health Awareness</h3><p class="text-sm text-gray-600">Initiated campaigns and counseling sessions for community mental well-being.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2023 - Youth Leadership</h3><p class="text-sm text-gray-600">Inaugurated a leadership program to mentor the next generation of change-makers.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded--full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2024 - Tech in Education</h3><p class="text-sm text-gray-600">Integrated smart classrooms and e-learning tools into our education centers.</p></div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white"></h1></div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 scroll-animate"><h3 class="font-bold text-gray-800 text-xl">2025 - Future Forward</h3><p class="text-sm text-gray-600">Strategizing for the next decade of impact with a focus on climate action and sustainability.</p></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Core Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 scroll-animate">
+                        <div class="bg-blue-100 p-4 inline-block rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.62-3.749A11.95 11.95 0 0018.5 3c-1.866 0-3.58.63-4.9 1.688A11.936 11.936 0 0012 2.714z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Integrity</h3>
+                        <p class="text-gray-600">We uphold the highest standards of honesty and transparency in all our actions.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-animate">
+                        <div class="bg-blue-100 p-4 inline-block rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Compassion</h3>
+                        <p class="text-gray-600">We are driven by a deep sense of empathy and a commitment to serve.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-animate">
+                        <div class="bg-blue-100 p-4 inline-block rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a11.999 11.999 0 01-2.25 0m1.5-2.311a6.012 6.012 0 002.25 0m-3.75 0a6.012 6.012 0 01-2.25 0m-3.75 2.311a11.999 11.999 0 002.25 0m-1.5-2.311a6.012 6.012 0 01-2.25 0m12.75 0a11.999 11.999 0 002.25 0m-1.5-2.311a6.012 6.012 0 00-2.25 0m3.75 0a6.012 6.012 0 012.25 0m-3.75-2.311a11.999 11.999 0 01-2.25 0m-1.5 2.311a6.012 6.012 0 01-2.25 0" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Empowerment</h3>
+                        <p class="text-gray-600">We believe in empowering individuals to take control of their own destinies.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-animate">
+                        <div class="bg-blue-100 p-4 inline-block rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.958 0m0 0a3.75 3.75 0 01-5.958 0M3 18.72a9.094 9.094 0 013.741-.479 3 3 0 01-4.682-2.72M12 12.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Collaboration</h3>
+                        <p class="text-gray-600">We work together with communities, partners, and donors to achieve common goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white">
+    <!-- Developer Credit Line (Separate Look) -->
+    <div class="bg-gray-900 py-4 border-t border-gray-700 text-center">
+        <p class="text-sm text-gray-300 leading-snug">
+            Site Developed by 
+            <a href="https://www.linkedin.com/in/immanuel-fernandes/" target="_blank"
+               class="text-white hover:text-blue-400 transition-colors font-semibold no-underline">
+                Immanuel Fernandes
+            </a> ~ 
+            <a href="https://www.youtube.com/@I.M.A.G.E." target="_blank"
+               class="text-white hover:text-blue-400 transition-colors font-semibold no-underline">
+                IMAGE (Immanuel Multimedia Animators & Graphical Editors)
+            </a>
+        </p>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="text-xl font-bold mb-4">Sahayini Social Development Society</h4>
+                    <p class="text-gray-400 leading-relaxed">A registered non-profit organization working towards the empowerment of marginalized communities through sustainable development initiatives.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition">Events</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Get Involved</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest work.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" class="w-full rounded-l-lg p-2 text-gray-800" placeholder="your.email@example.com">
+                            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold p-2 rounded-r-lg">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">&copy; 2025 Sahayini Social Development Society. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <!-- Social Media Icons with updated URLs -->
+                    <a href="https://www.facebook.com/Sahayini/" target="_blank" class="text-white hover:text-blue-500 transition duration-300">
+                        <!-- Facebook -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/Sahayini" target="_blank" class="text-white hover:text-blue-500 transition duration-300">
+                        <!-- Twitter -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/sahayini/" target="_blank" class="text-white hover:text-blue-500 transition duration-300">
+                        <!-- Instagram -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.056 2.003.248 2.47.415a4.92 4.92 0 011.675 1.09 4.92 4.92 0 011.09 1.675c.167.467.359 1.264.415 2.47.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.206-.248 2.003-.415 2.47a4.92 4.92 0 01-1.09 1.675 4.92 4.92 0 01-1.675 1.09c-.467.167-1.264.359-2.47.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.056-2.003-.248-2.47-.415a4.92 4.92 0 01-1.675-1.09 4.92 4.92 0 01-1.09-1.675c-.167-.467-.359-1.264-.415-2.47C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.206.248-2.003.415-2.47a4.92 4.92 0 011.09-1.675 4.92 4.92 0 011.675-1.09c.467-.167 1.264-.359 2.47-.415C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.735 0 8.332.012 7.052.07 5.733.127 4.666.308 3.8.645a7.08 7.08 0 00-2.563 1.678A7.08 7.08 0 00.645 4.8C.308 5.666.127 6.733.07 8.052.012 9.332 0 9.735 0 12c0 2.265.012 2.668.07 3.948.057 1.319.238 2.386.575 3.252a7.08 7.08 0 001.678 2.563 7.08 7.08 0 002.563 1.678c.866.337 1.933.518 3.252.575 1.28.058 1.683.07 3.948.07s2.668-.012 3.948-.07c1.319-.057 2.386-.238 3.252-.575a7.08 7.08 0 002.563-1.678 7.08 7.08 0 001.678-2.563c.337-.866.518-1.933.575-3.252.058-1.28.07-1.683.07-3.948s-.012-2.668-.07-3.948c-.057-1.319-.238-2.386-.575-3.252a7.08 7.08 0 00-1.678-2.563A7.08 7.08 0 0020.2.645C19.334.308 18.267.127 16.948.07 15.668.012 15.265 0 12 0zM12 5.838A6.162 6.162 0 105.838 12 6.162 6.162 0 0012 5.838zm0 10.162A3.998 3.998 0 1116 12a3.998 3.998 0 01-4 4zm6.406-11.845a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+</footer>
+
+
+
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Scroll Animations
+        const scrollElements = document.querySelectorAll('.scroll-animate');
+
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+            );
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add('visible');
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+        // Trigger on load as well
+        handleScrollAnimation();
+    </script>
+</body>
+</html>
